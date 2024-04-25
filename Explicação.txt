@@ -1,0 +1,11 @@
+Sofia Petersen
+
+Primeiro importei as bibliotecas necessárias no início do código. Então explicando linha a linha:
+Utilizei request para fazer a solicitação HTTP e BeautifulSoup para analisar o HTML da página.
+A função extract_all_content recebe a URL como entrada.
+Usei ``requests.get(url)'' para realizar uma solicitação GET para a URL.
+Daí o If para verificar se a resposta da solicitação foi bem-sucedida (código de status 200).
+Se a resposta for bem-sucedida, a página vai ser analisada com BeautifulSoup e extrair todo o texto.
+O texto é adicionado ao conjunto (content_set)
+Retorna o conjunto de conteúdo.
+No fim um print pra mostrar o conteudo.
